@@ -1,6 +1,4 @@
 <?php
-
-
 abstract class AbstractclassBasicModel extends CI_Model
 {
 
@@ -77,7 +75,4 @@ abstract class AbstractclassBasicModel extends CI_Model
  		{
  			return $this->last_id;
  		}
-
-
-
 }
