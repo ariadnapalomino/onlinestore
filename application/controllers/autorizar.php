@@ -16,7 +16,7 @@ class Autorizar extends AbstractController {
                 $email = $this->input->post('email');
                 $clave = $this->input->post('clave');
 
-                //optiene clave de BD
+                
                 $this->load->model('Usuario');
                 $result = $this->Usuario->login($email,$clave);
                 if($result) {
