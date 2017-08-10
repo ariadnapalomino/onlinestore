@@ -1,6 +1,9 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
 include_once "AbstractController.php";
-class Registrar extends AbstractController {
+
+class Registrar extends AbstractController 
+{
     public function index()
     {
         if($this->is_post()){

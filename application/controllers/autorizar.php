@@ -1,7 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 session_start();
 include_once "AbstractController.php";
-class Autorizar extends AbstractController {
+class Autorizar extends AbstractController 
+{
 
 	public function index()
 	{
@@ -45,7 +46,8 @@ class Autorizar extends AbstractController {
         }
 	}
 
-	public function salir(){
+	public function salir()
+    {
         $this->session->unset_userdata('login');
         session_destroy();
         redirect('autorizar', 'refresh');

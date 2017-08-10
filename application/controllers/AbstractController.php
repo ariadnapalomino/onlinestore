@@ -1,11 +1,11 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-
 abstract class AbstractController extends CI_Controller 
 {
 	protected $arregloPost;
 
-	public function __construct(){
+	public function __construct()
+	{
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->helper('form');
